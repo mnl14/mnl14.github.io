@@ -171,6 +171,57 @@ a:hover, a:focus-visible {
   font-size: 0.75rem;
 }
 
+/* Individual project page */
+.proj-hero {
+  max-width: 720px;
+  margin: 4rem auto 3rem;
+  padding: 0 2rem;
+}
+.proj-section {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  border-top: 1px solid var(--line);
+}
+.proj-section p {
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  max-width: 620px;
+}
+.proj-list {
+  list-style: none;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+.proj-list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.proj-list li::before {
+  content: "— ";
+  color: var(--amber);
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.stat-num {
+  font-size: 1.4rem;
+  color: var(--cyan);
+}
+.stat-label {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .hero h1 { font-size: 2.2rem; }

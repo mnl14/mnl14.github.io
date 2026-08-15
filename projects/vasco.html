@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VASCO — Interstellar Dust Candidates | Manuel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row">
+    <span class="mono tag">MNL / DATA LOG</span>
+    <nav>
+      <a href="../index.html">INICIO</a>
+      <a href="https://github.com/mnl14/vasco-interstellar-dust-candidates" target="_blank">GITHUB</a>
+      <a href="mailto:manuelsanchezpace@gmail.com">CONTACTO</a>
+    </nav>
+  </div>
+</header>
+
+<section class="proj-hero">
+  <p class="mono eyebrow">DS-001 · COMPLETO</p>
+  <h1>VASCO — Interstellar Dust Candidates</h1>
+  <p class="hero-desc">
+    Identificación y caracterización de 218 candidatos a "estrellas desaparecidas" (vanishing stars)
+    explicables por extinción de polvo interestelar partiendo de una lista de 5399 fuentes, mediante cross-matching astrométrico e infrarrojo.
+  </p>
+  <div class="entry-tags mono" style="margin-top: 1.5rem;">
+    <span>PYTHON</span><span>ASTROQUERY</span><span>GAIA DR3</span><span>2MASS</span><span>DBSCAN</span><span>BAYESTAR19</span>
+  </div>
+  <div class="entry-links mono" style="margin-top: 1.2rem;">
+    <a href="https://github.com/mnl14/vasco-interstellar-dust-candidates" target="_blank">REPOSITORIO →</a>
+  </div>
+</section>
+
+<section class="proj-section">
+  <p class="mono section-label">// PROBLEMA</p>
+  <p>
+    El proyecto VASCO (Vanishing and Appearing Sources during a Century of Observations) cataloga estrellas
+    presentes en placas fotográficas históricas que ya no son detectables en levantamientos modernos.
+    Una fracción de estas desapariciones aparentes puede explicarse por extinción — no por desaparición real —
+    causada por nubes de polvo interestelar interpuestas.
+  </p>
+</section>
+
+<section class="proj-section">
+  <p class="mono section-label">// METODOLOGÍA</p>
+  <p>
+    Sobre un catálogo inicial de 5.399 candidatos, se aplicó un filtro de enrojecimiento infrarrojo
+    (cross-matching con 2MASS) que redujo la muestra a 218 candidatos explicables por extinción de polvo.
+    Caracterización mediante seis análisis independientes:
+  </p>
+  <ul class="proj-list mono">
+    <li>Mapeo de polvo 3D (Bayestar19)</li>
+    <li>Ajuste de cuerpo negro modificado sobre datos Planck HFI (β = 1.8)</li>
+    <li>Fotometría infrarroja WISE W3/W4</li>
+    <li>Cinemática de gas mediante líneas CO/HI</li>
+    <li>Cross-matching con catálogos PGCC, Dobashi y Lynds</li>
+    <li>Análisis de homogeneidad regional</li>
+  </ul>
+</section>
+
+<section class="proj-section">
+  <p class="mono section-label">// RESULTADOS</p>
+  <div class="stat-grid">
+    <div class="stat">
+      <span class="stat-num mono">218</span>
+      <span class="stat-label mono">candidatos finales</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num mono">175 / 43</span>
+      <span class="stat-label mono">nubes densas / translúcidas</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num mono">9.7–16.4 K</span>
+      <span class="stat-label mono">rango temperatura Planck</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num mono">68 / 218</span>
+      <span class="stat-label mono">matches con PGCC</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num mono">83 / 218</span>
+      <span class="stat-label mono">matches con Dobashi</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer mono">
+  <span>MNL14 © 2026</span>
+  <a href="../index.html">← VOLVER AL INICIO</a>
+</footer>
+
+</body>
+</html>
